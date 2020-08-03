@@ -11,6 +11,8 @@ enum_dispatch = "0.2"
 ahash = "*"
 nested = "0.1"
 num = "*"
+regex = "1"
+compressed_vec = "0.1"
 
 # Needed for flamegraph and other perf profiling
 [profile.release]

@@ -9,13 +9,7 @@ use enum_dispatch::enum_dispatch;
 use nested::{Iter, Nested};
 use num::{PrimInt, ToPrimitive, Unsigned};
 
-
-#[derive(Debug)]
-pub enum DataError {
-    OutOfBufferSpace,
-    MaybeDouble,               // Could not parse as integer, try double
-    NeedBiggerDictionaryVal,   // dictionary encoding value type is too small
-}
+use crate::error::*;
 
 
 pub fn calculate_hash(str: &str) -> u64 {
